@@ -12,9 +12,11 @@
             text-align: center;
             margin: 0;
             padding: 0;
+            /* Multi-color animated gradient */
             background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fad0c4, #fbc2eb, #a18cd1);
             background-size: 400% 400%;
             animation: gradientAnimation 10s ease infinite;
+            /* Center content vertically and horizontally */
             height: 100vh;
             display: flex;
             flex-direction: column;
@@ -22,7 +24,7 @@
             align-items: center;
         }
 
-        /* Gradient Animation */
+        /* Gradient Animation keeps smooth*/
         @keyframes gradientAnimation {
             0% { background-position: 0% 50%; }
             50% { background-position: 100% 50%; }
@@ -39,7 +41,7 @@
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
         }
 
-        /* Title Styling */
+        /* Title */
         h1 {
             font-size: 36px;
             font-weight: bold;
@@ -85,19 +87,25 @@
     </div>
 
     <script>
+        // Tracks backend transcription and interval
         let listening = false;
         let interval = null;
 
         document.getElementById("toggleButton").addEventListener("click", function () {
+            // Send POST request to backend to toggle listening
             fetch('/toggle_listening', { method: 'POST' })
                 .then(response => response.json())
                 .then(data => {
+                     //update frontend listening state
                     listening = data.listening;
+                    //update button 
                     document.getElementById("toggleButton").innerText = listening ? "Stop Generating" : "Start Generating";
 
                     if (listening) {
+                        //start polling backend for transcription
                         startFetching();
                     } else {
+                        //stop polling and reset
                         clearInterval(interval);
                         document.getElementById("output").innerText = "Listening is OFF";
                     }
@@ -105,13 +113,15 @@
         });
 
         function startFetching() {
+            //poll backend every second for updated transcription
             interval = setInterval(() => {
                 fetch('/get_live_input')
                     .then(response => response.json())
                     .then(data => {
+                        //display latest transcription text
                         document.getElementById("output").innerText = data.input;
                     });
-            }, 1000); // Fetch new number every second
+            }, 1000); //fetch new number every second
         }
     </script>
 
