@@ -25,13 +25,12 @@ duration = config["constants"]["duration"]
 sample_rate = config["constants"]["smp_rate"]
 channel = config["constants"]["channels"]
 device_id = config["constants"]["dev_id"]
-#
 running = config["constants"]["run"]
-#this is a global varible for holding the names of the wav files
+#this is a global variable for holding the names of the wav files
 recorded_files = []
 
 
-#this function will take in a .wav file and transcibe it using whisper model. 
+#this function will take in a .wav file and transcribe it using whisper model. 
 #converts model output into a string, and publishes it to shared_value.
 #also deletes the WAV file afterwards
 def transcribe(file): 
@@ -52,7 +51,7 @@ def transcribe(file):
      #setup ONNX Runtime session
     options = ort.SessionOptions()
     options.register_custom_ops_library(get_library_path())
-    #we choose out execution provider here
+    #we choose our execution provider here
     session = ort.InferenceSession(model_path, options, providers=["CPUExecutionProvider"])
     #remove the mask we dont need it
     inputs.pop("attention_mask", None)
@@ -74,6 +73,7 @@ def transcribe(file):
         logger.info("File Deleted")
     except Exception as e:
         logger.exception(f"File deletion exception: {e}")
+
 #takes filenames from recorded_files queue and transcribes them.
 def transcription_worker():
     while running:

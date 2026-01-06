@@ -29,8 +29,8 @@ listening = False
 def run_in_background():
     run('foo')  #does listening
 
-    #- If listening is turned ON, starts Whisper in a new thread.
-    #- If listening is turned OFF, sends an exit signal to Whisper. 
+    #if listening is turned ON, starts Whisper in a new thread.
+    #if listening is turned OFF, sends an exit signal to Whisper. 
 @app.route('/toggle_listening', methods=['POST'])
 def toggle_listening():
     logger.info("Toggle Start")

@@ -1,30 +1,36 @@
-2026-01-04 20:43:58,901 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+2026-01-06 12:34:04,386 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on http://127.0.0.1:5000
-2026-01-04 20:43:58,901 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
-2026-01-04 20:45:02,287 - werkzeug - INFO - 127.0.0.1 - - [04/Jan/2026 20:45:02] "GET / HTTP/1.1" 200 -
-2026-01-04 20:45:02,441 - werkzeug - INFO - 127.0.0.1 - - [04/Jan/2026 20:45:02] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-2026-01-04 20:45:04,169 - __main__ - INFO - Toggle Start
-2026-01-04 20:45:04,169 - __main__ - INFO - Thread Starting
-2026-01-04 20:45:04,169 - back_whisper - INFO - Running...
-2026-01-04 20:45:04,169 - __main__ - INFO - Thread Running
-2026-01-04 20:45:04,170 - werkzeug - INFO - 127.0.0.1 - - [04/Jan/2026 20:45:04] "POST /toggle_listening HTTP/1.1" 200 -
-2026-01-04 20:45:05,218 - __main__ - INFO - Live Input Start
-2026-01-04 20:45:05,224 - werkzeug - INFO - 127.0.0.1 - - [04/Jan/2026 20:45:05] "GET /get_live_input HTTP/1.1" 200 -
-2026-01-04 20:45:06,213 - __main__ - INFO - Live Input Start
-2026-01-04 20:45:06,219 - werkzeug - INFO - 127.0.0.1 - - [04/Jan/2026 20:45:06] "GET /get_live_input HTTP/1.1" 200 -
-2026-01-04 20:45:07,221 - __main__ - INFO - Live Input Start
-2026-01-04 20:45:07,227 - werkzeug - INFO - 127.0.0.1 - - [04/Jan/2026 20:45:07] "GET /get_live_input HTTP/1.1" 200 -
-2026-01-04 20:45:07,946 - __main__ - INFO - Toggle Start
-2026-01-04 20:45:07,953 - back_whisper - INFO - Running...
-2026-01-04 20:45:08,223 - __main__ - INFO - Live Input Start
-2026-01-04 20:45:08,242 - werkzeug - INFO - 127.0.0.1 - - [04/Jan/2026 20:45:08] "GET /get_live_input HTTP/1.1" 200 -
-2026-01-04 20:45:09,224 - __main__ - INFO - Live Input Start
-2026-01-04 20:45:09,236 - werkzeug - INFO - 127.0.0.1 - - [04/Jan/2026 20:45:09] "GET /get_live_input HTTP/1.1" 200 -
-2026-01-04 20:45:10,224 - __main__ - INFO - Live Input Start
-2026-01-04 20:45:10,237 - werkzeug - INFO - 127.0.0.1 - - [04/Jan/2026 20:45:10] "GET /get_live_input HTTP/1.1" 200 -
-2026-01-04 20:45:11,244 - __main__ - INFO - Live Input Start
-2026-01-04 20:45:11,257 - werkzeug - INFO - 127.0.0.1 - - [04/Jan/2026 20:45:11] "GET /get_live_input HTTP/1.1" 200 -
-2026-01-04 20:45:12,877 - __main__ - INFO - Live Input Start
-2026-01-04 20:45:12,896 - werkzeug - INFO - 127.0.0.1 - - [04/Jan/2026 20:45:12] "GET /get_live_input HTTP/1.1" 200 -
-2026-01-04 20:45:15,321 - __main__ - INFO - Live Input Start
-2026-01-04 20:45:15,333 - werkzeug - INFO - 127.0.0.1 - - [04/Jan/2026 20:45:15] "GET /get_live_input HTTP/1.1" 200 -
+2026-01-06 12:34:04,386 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-01-06 12:34:14,488 - werkzeug - INFO - 127.0.0.1 - - [06/Jan/2026 12:34:14] "[36mGET / HTTP/1.1[0m" 304 -
+2026-01-06 12:34:37,395 - __main__ - INFO - Toggle Start
+2026-01-06 12:34:37,396 - __main__ - INFO - Thread Starting
+2026-01-06 12:34:37,397 - back_whisper - INFO - Running...
+2026-01-06 12:34:37,397 - __main__ - INFO - Thread Running
+2026-01-06 12:34:37,408 - werkzeug - INFO - 127.0.0.1 - - [06/Jan/2026 12:34:37] "POST /toggle_listening HTTP/1.1" 200 -
+2026-01-06 12:34:38,447 - __main__ - INFO - Live Input Start
+2026-01-06 12:34:38,453 - werkzeug - INFO - 127.0.0.1 - - [06/Jan/2026 12:34:38] "GET /get_live_input HTTP/1.1" 200 -
+2026-01-06 12:34:39,454 - __main__ - INFO - Live Input Start
+2026-01-06 12:34:39,460 - werkzeug - INFO - 127.0.0.1 - - [06/Jan/2026 12:34:39] "GET /get_live_input HTTP/1.1" 200 -
+2026-01-06 12:34:40,448 - __main__ - INFO - Live Input Start
+2026-01-06 12:34:40,454 - werkzeug - INFO - 127.0.0.1 - - [06/Jan/2026 12:34:40] "GET /get_live_input HTTP/1.1" 200 -
+2026-01-06 12:34:41,462 - __main__ - INFO - Live Input Start
+2026-01-06 12:34:41,469 - werkzeug - INFO - 127.0.0.1 - - [06/Jan/2026 12:34:41] "GET /get_live_input HTTP/1.1" 200 -
+2026-01-06 12:34:42,457 - __main__ - INFO - Live Input Start
+2026-01-06 12:34:42,464 - werkzeug - INFO - 127.0.0.1 - - [06/Jan/2026 12:34:42] "GET /get_live_input HTTP/1.1" 200 -
+2026-01-06 12:34:43,455 - __main__ - INFO - Live Input Start
+2026-01-06 12:34:43,462 - werkzeug - INFO - 127.0.0.1 - - [06/Jan/2026 12:34:43] "GET /get_live_input HTTP/1.1" 200 -
+2026-01-06 12:34:43,524 - __main__ - INFO - Toggle Start
+2026-01-06 12:34:43,531 - back_whisper - INFO - Running...
+2026-01-06 12:34:44,480 - __main__ - INFO - Live Input Start
+2026-01-06 12:34:44,494 - werkzeug - INFO - 127.0.0.1 - - [06/Jan/2026 12:34:44] "GET /get_live_input HTTP/1.1" 200 -
+2026-01-06 12:34:45,709 - __main__ - INFO - Live Input Start
+2026-01-06 12:34:45,722 - werkzeug - INFO - 127.0.0.1 - - [06/Jan/2026 12:34:45] "GET /get_live_input HTTP/1.1" 200 -
+2026-01-06 12:34:47,635 - __main__ - INFO - Live Input Start
+2026-01-06 12:34:47,648 - werkzeug - INFO - 127.0.0.1 - - [06/Jan/2026 12:34:47] "GET /get_live_input HTTP/1.1" 200 -
+2026-01-06 12:34:48,628 - __main__ - INFO - Live Input Start
+2026-01-06 12:34:48,647 - werkzeug - INFO - 127.0.0.1 - - [06/Jan/2026 12:34:48] "GET /get_live_input HTTP/1.1" 200 -
+2026-01-06 12:34:50,296 - __main__ - INFO - Live Input Start
+2026-01-06 12:34:50,308 - werkzeug - INFO - 127.0.0.1 - - [06/Jan/2026 12:34:50] "GET /get_live_input HTTP/1.1" 200 -
+2026-01-06 12:34:54,304 - __main__ - INFO - Live Input Start
+2026-01-06 12:34:54,316 - werkzeug - INFO - 127.0.0.1 - - [06/Jan/2026 12:34:54] "GET /get_live_input HTTP/1.1" 200 -
+2026-01-06 12:34:56,047 - __main__ - INFO - Starting App
